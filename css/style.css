@@ -1,0 +1,430 @@
+.inicio{
+    text-align: center;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.welcome{
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    font-family: 'Doto';
+    font-size: 90px
+}
+
+.welcome.visible2 {
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 4s ease-in-out;
+    font-family: 'Nixie One';
+    font-size: 3ch;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.sobre_mi .text-bg-secondary{
+    opacity: 0;
+    transition: opacity 6s ease-in-out;
+}
+.sobre_mi .text-bg-secondary.visible3 {
+    opacity: 1;
+}
+.scroll-text {
+    opacity: 0;
+    transition: opacity 3s ease-in-out; transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+    transform: translateY(20px);
+}
+.scroll-text.visible4 {
+    opacity: 1;
+    transform: translateY(0);
+    font-size:2.5ch;
+}
+.imagen-transicion {
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+.imagen-transicion.mover{
+    opacity: 1;
+    transform: translateX(-20px); /* Ajusta este valor según sea necesario */
+}
+.subtitulo-transicion, .sobre_mi{    /* .titulo-transicion,  */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.subtitulo-transicion.visible, .sobre_mi.visible { /*.titulo-transicion.visible, */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-basic {
+    display: flex;
+    align-items: center; /* Alinea verticalmente al centro */
+    justify-content: center; /* Alinea horizontalmente al centro */
+    text-align: left;/* Alinea el texto a la izquierda */
+    padding-bottom: 70px;
+}
+.info-basic img {
+    max-width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+.text-container {
+    display: flex;
+    flex-direction: column; /* Alinea los párrafos verticalmente */
+}
+.info-basic p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+.info-basic h1{
+    margin-bottom: 10px;
+}
+.nav-item{
+    font-size: 20px;
+    color: black;
+}
+
+.tarjeta_experience{
+    padding-top: 40px;
+    margin: 50px;
+}
+.price_travel{
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 90px;
+}
+.automundial_logo{
+    padding: 20px;
+}
+.grupo_exito{
+    padding: 20px;
+}
+.titulo_experiencia{
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 4s ease-out;
+}
+.titulo_experiencia.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.titulo_experiencia h1 {
+    font-size: 90px;
+    font-family: 'Doto';  
+}
+.titulo_experiencia p{
+    padding-top: 20px;
+    font-size: 20px;
+    
+}
+.historia{
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0px;
+    font-family: 'Doto';
+    font-size: 90px;
+    
+}
+.imagen_brey{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.contenedor_historia{
+    font-size:2.5ch;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+.conoceme_historia{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contenedor_historia_c {
+    align-items: center;
+}
+.contenedor_habilidades{
+    display: flex;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 100px;
+}
+.habilidades_h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Doto';
+    font-size: 90px;
+}
+.scrollspy-example {
+    position: relative;
+    width: 350px;
+    height: 350px; 
+    overflow-y: scroll;
+    padding: 3rem;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+  }
+  .scrollspy-example li{
+    list-style-type: none;
+  }
+  .simple-list-example-scrollspy .active {
+    background-color: #000000; 
+    color: white; /* Color del texto para el enlace activo */
+  }
+
+  .estilo_link {
+    color: #000000; /* Color del enlace */
+    text-decoration: none; /* Quitar el subrayado */
+    transition: transform 0.2s; /* Transición suave para la animación */
+    
+  }
+  
+  .estilo_link:hover {
+    color: #00ff88; /* Color del enlace al pasar el ratón */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    animation: heartbeat 1s infinite; /* Añadir la animación de palpito */
+  }
+  
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    80% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bounce-modal .modal-dialog {
+    animation: bounceIn 0.5s;
+  }
+ 
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(50px); /* Inicialmente desplazado */
+    transition: all 0.5s ease-out; /* Transición suave */
+}
+
+.left {
+    left: -100px;
+}
+
+.right {
+    left: 20%;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: #ffffff;
+    color: #333333;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.left .content {
+    margin-left: 60px;
+}
+
+.right .content {
+    margin-right: 100px;
+    margin-left: 60px ;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -19px;
+    background-color: rgba(255, 255, 255, 0.147);
+    border: 4px solid #5d5d5d;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left::after {
+    left: -16px;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.container.show {
+    opacity: 1; /* Visible */
+    transform: translateY(0); /* Posición original */
+}
+
+
+
+.skills-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px;
+    
+}
+
+.skill {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+}
+
+.skill h2 {
+    margin-top: 0;
+}
+
+.skill.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.habilidades{
+        text-align: center;
+        margin-bottom: 100px;
+        font-family: 'Doto';
+        font-size: 90px;
+}
+
+.contact-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #868686;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.contact-bubble:hover {
+    background-color: rgb(96, 145, 199);
+}
+.contact-options {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+.contact-options a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: #2963a0;
+    border-radius: 5px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+}
+.contact-options a:hover {
+    background-color: #f4f4f4;
+}
+.contact-options a i {
+    margin-right: 8px;
+}
+.contact-options.show a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar .nav-link {
+    color: #333333; /* Color del enlace normal */
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color:  rgb(96, 145, 199) !important; /* Color del enlace al pasar el cursor */
+}
+
+.navbar .nav-link:active {
+    color: #0056b3 ; /* Color del enlace activo */
+}
+
+.navbar .nav-link:visited {
+    color: #6c757d; /* Color del enlace visitado */
+}
+
+/* Colores para el enlace activo */
+.navbar .nav-link.active {
+    color: #0056b3; /* Color del enlace activo */
+}
